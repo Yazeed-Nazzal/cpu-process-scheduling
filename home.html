@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,202 +9,200 @@
     <script src="jquery-3.4.0.min.js"></script>
     <title>cpu Sch</title>
 </head>
+
 <body>
-  <div class="table1">
-    <table class="tg">
-      <tr>
-        <th id="POX" class="tg-0pky">processes</th>
-        <th id="Bx" class="tg-0pky B">Brust time</th>
-        <th id="Ax" class="tg-0pky  ">Arrival time</th>
-        <th id="PRX"  class="tg-0lax hid p ">priority</th>
-        <th id="Wx" class="tg-0lax w ">waite</th>
-      </tr>
-      <tr>
-        <td id="PO0" class="tg-0pky">p1</td>
-        <td  id="B0" class="tg-0pky B"> </td>
-        <td id="A0" class="tg-0pky"> </td>
-        <td id="PR0"  class="tg-0pky hid p"> </td>
-        <td id="W0" class="tg-0pky w"></td>
+    <div class="table1">
+        <table class="tg">
+            <tr>
+                <th id="POX" class="tg-0pky">processes</th>
+                <th id="Bx" class="tg-0pky B">Brust time</th>
+                <th id="Ax" class="tg-0pky  ">Arrival time</th>
+                <th id="PRX" class="tg-0lax hid p ">priority</th>
+                <th id="Wx" class="tg-0lax w ">waite</th>
+            </tr>
+            <tr>
+                <td id="PO0" class="tg-0pky">p1</td>
+                <td id="B0" class="tg-0pky B"> </td>
+                <td id="A0" class="tg-0pky"> </td>
+                <td id="PR0" class="tg-0pky hid p"> </td>
+                <td id="W0" class="tg-0pky w"></td>
 
-      </tr>
-      <tr>
-        <td id="PO1" class="tg-0pky">p2</td>
-        <td  id="B1" class="tg-0pky B"> </td>
-        <td  id="A1" class="tg-0pky  "> </td>
-        <td  id="PR1"  class="tg-0pky hid p"> </td>
-        <td id="W1" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO2" class="tg-0pky">p3</td>
-        <td  id="B2" class="tg-0pky B"> </td>
-        <td  id="A2" class="tg-0pky  "> </td>
-        <td   id="PR2" class="tg-0pky hid p"> </td>
-        <td id="W2"  class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO3" class="tg-0pky">p4</td>
-        <td  id="B3" class="tg-0pky B"> </td>
-        <td  id="A3" class="tg-0pky  "> </td>
-        <td   id="PR3"  class="tg-0pky hid p"> </td>
-        <td id="W3" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO4" class="tg-0pky">p5</td>
-        <td  id="B4" class="tg-0pky B"> </td>
-        <td  id="A4" class="tg-0pky  "> </td>
-        <td   id="PR4" class="tg-0pky hid p"> </td>
-        <td id="W4" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO5" class="tg-0pky">p6</td>
-        <td  id="B5" class="tg-0pky B"> </td>
-        <td  id="A5" class="tg-0pky  "> </td>
-        <td    id="PR5" class="tg-0pky hid p"> </td>
-        <td id="W5" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO6" class="tg-0pky">p7</td>
-        <td  id="B6" class="tg-0pky B"> </td>
-        <td  id="A6" class="tg-0pky  "> </td>
-        <td   id="PR6" class="tg-0pky hid p"> </td>
-        <td id="W6" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO7" class="tg-0pky">p8</td>
-        <td  id="B7" class="tg-0pky B"> </td>
-        <td  id="A7" class="tg-0pky  "> </td>
-        <td  id="PR7" class="tg-0pky hid p"> </td>
-        <td id="W7" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO8" class="tg-0pky">p9</td>
-        <td  id="B8" class="tg-0pky B"> </td>
-        <td  id="A8" class="tg-0pky  "> </td>
-        <td  id="PR8" class="tg-0pky hid p"> </td>
-        <td id="W8" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO9" class="tg-0pky">p10</td>
-        <td  id="B9" class="tg-0pky B"> </td>
-        <td  id="A9" class="tg-0pky  "> </td>
-        <td  id="PR9" class="tg-0pky hid p"> </td>
-        <td id="W9" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO1" class="tg-0pky">p2</td>
+                <td id="B1" class="tg-0pky B"> </td>
+                <td id="A1" class="tg-0pky  "> </td>
+                <td id="PR1" class="tg-0pky hid p"> </td>
+                <td id="W1" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO2" class="tg-0pky">p3</td>
+                <td id="B2" class="tg-0pky B"> </td>
+                <td id="A2" class="tg-0pky  "> </td>
+                <td id="PR2" class="tg-0pky hid p"> </td>
+                <td id="W2" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO3" class="tg-0pky">p4</td>
+                <td id="B3" class="tg-0pky B"> </td>
+                <td id="A3" class="tg-0pky  "> </td>
+                <td id="PR3" class="tg-0pky hid p"> </td>
+                <td id="W3" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO4" class="tg-0pky">p5</td>
+                <td id="B4" class="tg-0pky B"> </td>
+                <td id="A4" class="tg-0pky  "> </td>
+                <td id="PR4" class="tg-0pky hid p"> </td>
+                <td id="W4" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO5" class="tg-0pky">p6</td>
+                <td id="B5" class="tg-0pky B"> </td>
+                <td id="A5" class="tg-0pky  "> </td>
+                <td id="PR5" class="tg-0pky hid p"> </td>
+                <td id="W5" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO6" class="tg-0pky">p7</td>
+                <td id="B6" class="tg-0pky B"> </td>
+                <td id="A6" class="tg-0pky  "> </td>
+                <td id="PR6" class="tg-0pky hid p"> </td>
+                <td id="W6" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO7" class="tg-0pky">p8</td>
+                <td id="B7" class="tg-0pky B"> </td>
+                <td id="A7" class="tg-0pky  "> </td>
+                <td id="PR7" class="tg-0pky hid p"> </td>
+                <td id="W7" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO8" class="tg-0pky">p9</td>
+                <td id="B8" class="tg-0pky B"> </td>
+                <td id="A8" class="tg-0pky  "> </td>
+                <td id="PR8" class="tg-0pky hid p"> </td>
+                <td id="W8" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO9" class="tg-0pky">p10</td>
+                <td id="B9" class="tg-0pky B"> </td>
+                <td id="A9" class="tg-0pky  "> </td>
+                <td id="PR9" class="tg-0pky hid p"> </td>
+                <td id="W9" class="tg-0pky w"></td>
 
-      </tr>
-      <tr>
-        <td id="PO10" class="tg-0pky">p11</td>
-        <td  id="B10" class="tg-0pky B"> </td>
-        <td  id="A10" class="tg-0pky  "> </td>
-        <td  id="PR10" class="tg-0pky hid p"> </td>
-        <td id="W10" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO11" class="tg-0pky">p12</td>
-        <td  id="B11" class="tg-0pky B"> </td>
-        <td  id="A11" class="tg-0pky  "> </td>
-        <td  id="PR11" class="tg-0pky hid p"> </td>
-        <td id="W11" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO12" class="tg-0pky">p13</td>
-        <td  id="B12" class="tg-0pky B"> </td>
-        <td  id="A12" class="tg-0pky  "> </td>
-        <td  id="PR12" class="tg-0pky hid p"> </td>
-        <td  id="W12" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td  id="PO13" class="tg-0pky">p14</td>
-        <td  id="B13" class="tg-0pky B"> </td>
-        <td  id="A13" class="tg-0pky  "> </td>
-        <td  id="PR13" class="tg-0pky hid p"> </td>
-        <td  id="W13" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO14" class="tg-0pky">p15</td>
-        <td id="B14"  class="tg-0pky B"> </td>
-        <td  id="A14" class="tg-0pky  "> </td>
-        <td  id="PR14" class="tg-0pky hid p"> </td>
-        <td  id="W14" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO15" class="tg-0pky">p16</td>
-        <td id="B15" class="tg-0pky B"> </td>
-        <td  id="A15" class="tg-0pky  "> </td>
-        <td  id="PR15" class="tg-0pky hid p"> </td>
-        <td  id="W15" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO16" class="tg-0pky">p17</td>
-        <td id="B16" class="tg-0pky B"> </td>
-        <td  id="A16" class="tg-0pky  "> </td>
-        <td  id="PR16" class="tg-0pky hid p"> </td>
-        <td  id="W16" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO17" class="tg-0pky">p18</td>
-        <td id="B17" class="tg-0pky B"> </td>
-        <td  id="A17" class="tg-0pky  "> </td>
-        <td  id="PR17" class="tg-0pky hid p"> </td>
-        <td   id="W17" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO18" class="tg-0pky">p19</td>
-        <td id="B18" class="tg-0pky B"> </td>
-        <td  id="A18" class="tg-0pky  "> </td>
-        <td  id="PR18" class="tg-0pky hid p"> </td>
-        <td  id="W18" class="tg-0pky w"></td>
-      </tr>
-      <tr>
-        <td id="PO19" class="tg-0lax">p20</td>
-        <td id="B19" class="tg-0pky B"> </td>
-        <td  id="A19" class="tg-0pky  "> </td>
-        <td  id="PR19" class="tg-0pky hid p"> </td>
-        <td  id="W19" class="tg-0pky w"></td>
-      </tr>
+            </tr>
+            <tr>
+                <td id="PO10" class="tg-0pky">p11</td>
+                <td id="B10" class="tg-0pky B"> </td>
+                <td id="A10" class="tg-0pky  "> </td>
+                <td id="PR10" class="tg-0pky hid p"> </td>
+                <td id="W10" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO11" class="tg-0pky">p12</td>
+                <td id="B11" class="tg-0pky B"> </td>
+                <td id="A11" class="tg-0pky  "> </td>
+                <td id="PR11" class="tg-0pky hid p"> </td>
+                <td id="W11" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO12" class="tg-0pky">p13</td>
+                <td id="B12" class="tg-0pky B"> </td>
+                <td id="A12" class="tg-0pky  "> </td>
+                <td id="PR12" class="tg-0pky hid p"> </td>
+                <td id="W12" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO13" class="tg-0pky">p14</td>
+                <td id="B13" class="tg-0pky B"> </td>
+                <td id="A13" class="tg-0pky  "> </td>
+                <td id="PR13" class="tg-0pky hid p"> </td>
+                <td id="W13" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO14" class="tg-0pky">p15</td>
+                <td id="B14" class="tg-0pky B"> </td>
+                <td id="A14" class="tg-0pky  "> </td>
+                <td id="PR14" class="tg-0pky hid p"> </td>
+                <td id="W14" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO15" class="tg-0pky">p16</td>
+                <td id="B15" class="tg-0pky B"> </td>
+                <td id="A15" class="tg-0pky  "> </td>
+                <td id="PR15" class="tg-0pky hid p"> </td>
+                <td id="W15" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO16" class="tg-0pky">p17</td>
+                <td id="B16" class="tg-0pky B"> </td>
+                <td id="A16" class="tg-0pky  "> </td>
+                <td id="PR16" class="tg-0pky hid p"> </td>
+                <td id="W16" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO17" class="tg-0pky">p18</td>
+                <td id="B17" class="tg-0pky B"> </td>
+                <td id="A17" class="tg-0pky  "> </td>
+                <td id="PR17" class="tg-0pky hid p"> </td>
+                <td id="W17" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO18" class="tg-0pky">p19</td>
+                <td id="B18" class="tg-0pky B"> </td>
+                <td id="A18" class="tg-0pky  "> </td>
+                <td id="PR18" class="tg-0pky hid p"> </td>
+                <td id="W18" class="tg-0pky w"></td>
+            </tr>
+            <tr>
+                <td id="PO19" class="tg-0lax">p20</td>
+                <td id="B19" class="tg-0pky B"> </td>
+                <td id="A19" class="tg-0pky  "> </td>
+                <td id="PR19" class="tg-0pky hid p"> </td>
+                <td id="W19" class="tg-0pky w"></td>
+            </tr>
+        </table>
+    </div>
+    <form class="selector">
+        <p><input class="r Fcfs" type="radio" name="method" value="1" checked> FCFS</p>
+        <p><input class="r sjf" type="radio" name="method" value="2"> SJF</p>
+        <p><input class="r pr" type="radio" name="method" value="3"> priority</p>
+        <p><input class="r rr" type="radio" name="method" value="4">RR</p>
+        <p class="quantum"><span>Select Quantum Time</span><input class="quan" type="number" name="quantity" min="1" max="20" value="10"></p>
+        <input type="button" class="fill fi" value="Fill The Table"></button>
+        <input type="button" class="b fill" value="GO">
+
+    </form>
+
+
+    <table class="tg table2">
+        <tr class="z">
+
+        </tr>
+        <tr class="resopns">
+
+        </tr>
     </table>
-</div>
-<form class="selector" >
-  <p><input class="r Fcfs"  type="radio" name="method" value="1" checked> FCFS</p>
-  <p><input class="r sjf"  type="radio" name="method"  value="2"> SJF</p>
-  <p><input class="r pr"  type="radio" name="method"  value="3"> priority</p>
-  <p><input class="r rr"  type="radio" name="method"  value="4">RR</p>
-  <p class="quantum"><span>Select Quantum Time</span><input class="quan" type="number" name="quantity" min="1" max="20" value="10"></p>
-  <input type="button" class="fill fi" value="Fill The Table"></button>
-     <input  type="button" class="b fill" value="GO">
-  
-</form>
+    <div class="result">
+        <p class="h">Average Waiting Time </p>
+        <p class="res1"></p>
+        <p>Average Response Time</p>
+        <p class="res2">200</p>
 
+    </div>
+    <div class="mag"></div>
+    <div class="footer">
+        <h2>CPU scheduling</h2>
+        <span>Done BY</span>
 
-<table class="tg table2">
-  <tr class="z">
- 
-  </tr>
-  <tr class="resopns">
-      
-  </tr>
-</table>
-<div class="result">
-<p class="h">Average Waiting Time </p>
-<p class="res1"></p>
-<p>Average Response Time</p>
-<p class="res2">200</p>
+        <p class="img1"></p>
+        <p id="n1" class="name"> yazeed nazal</p>
 
-</div>
-<div class="mag"></div>
-<div class="footer">
-  <h2>CPU scheduling</h2>
-  <span>Done BY</span>
- 
-  <p class="img1"></p>
-  <p id="n1" class="name"> yazeed nazal</p>
-  <p class="img2"></p>
-  <p>bassel mousa</p>
-  <p class="img3"></p>
-  <p>Mohammad A-k</p>
-</div>
+    </div>
 
 
 
-<script src="jq.js"></script>
+    <script src="jq.js"></script>
 </body>
 </htmls>
